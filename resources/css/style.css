@@ -124,6 +124,7 @@ header ul li {
   flex-direction: column;
   /* border: 1px solid brown; */
   width: 50%;
+  margin-left: 5%;
 }
 .row-two h4 {
   font-family: Helvetica;
@@ -132,7 +133,8 @@ header ul li {
   color: white;
   background-color: cadetblue;
   padding: 0.5rem 0rem 0.5rem 1.25rem;
-
+  width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .row-two {
@@ -147,16 +149,6 @@ header ul li {
   font-family: Helvetica;
   font-size: 1rem;
   max-width: 90%;
-}
-
-.philosophy h4, .appointment h4 {
-  width: 10rem;
-  margin-bottom: 1rem;
-}
-
-.appointment, .philosophy {
-  margin-left: 5%;
-  /* border: 1px solid purple; */
 }
 
 /* footer */
@@ -215,12 +207,13 @@ footer span {
 
 @media only screen and (max-width: 480px) {
   .head {
-    margin-top: 0;
-    max-width: 480px;
-    width: auto;
-  }
-  .logo {
+    margin: 0;
+    width: 80%;
+    position: fixed;
     padding-left: 2rem;
+  }
+  .logo img {
+    height: 1rem;
   }
   header {
     display: flex;
@@ -232,52 +225,62 @@ footer span {
     padding: 1rem 0;
     background-color: white;
     font-size: 1.33rem;
-    /* position: absolute; */
     margin-top: 12rem;
+    width: 100%;
+    text-align: center;
   }
   .menu {
     display: block;
   }
   .navigation ul li, .logo span {
     display: none;
-  }
-.row-one, .row-two {
-  display: flex;
-  flex-direction: column;
-  padding: 3.77rem 0;
-  align-items: center;
-}
-.row-one p {
-  font-family: Helvetica;
-  font-size: 0.77rem;
-}
-.delivery, .fittings {
-  margin-top: 1.54rem;
-}
 
-.philosophy p, .appointment p {
-  font-family: Helvetica;
-  font-size: 0.77rem;
-}
-.philosophy h4, .appointment h4 {
-  max-width: 480px;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.philosophy, .appointment {
-  max-width: 480px;
-  /* border: 1px dotted blue; */
-  margin: 0;
-
-}
   }
-.main {
-  padding-bottom: 0;
-}
-.row-one img {
-  padding: 0.74rem;
-  width: 4rem;
-}
+  .row-one {
+    display: flex;
+    flex-direction: column;
+    padding: 3.77rem 0;
+    align-items: center;
+  }
+  .row-one p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+  .delivery, .fittings {
+    margin-top: 1.54rem;
+  }
+  .main {
+    padding-bottom: 0;
+    /* border: 1px solid red; */
+  }
+  .row-one img {
+    padding: 0.74rem;
+    width: 4rem;
+  }
+
+  .row-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    align-content: center;
+    padding: 0;
+  }
+  .philosophy p, .appointment p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    margin-bottom: 2rem;
+  }
+  .philosophy h4, .appointment h4 {
+    width: 90%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .row-two div {
+    width: auto;
+
+  }
+
 footer img {
     max-width: 480px;
   }
