@@ -6,36 +6,171 @@ html {
 /* header */
 header {
   display: flex;
-  position: absolute;
-  justify-content: center;
-  margin-top: 1rem;
+  flex-direction: column;
+  background-image: url("../images/glasses-bg.png");
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  height: 30rem;
+  align-items: center;
+
+}
+
+.head {
+  display: flex;
   background-color: cadetblue;
+  position: absolute;
+  width: 888px;
   font-family: Helvetica;
   font-size: 1rem;
-  width: 960px;
-  align-items: center;
   color: white;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header h1 {
+  padding: 2rem 5.5rem;
+  background-color: white;
+  color: black;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  position: absolute;
+  margin-top: 14rem;
+  float: right;
+
+}
+
+.headline {
+  width: 996px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem;
+  right: 2rem;
 }
 
 header img {
   height: 1.5rem;
-  margin-left: 2rem;
+  padding-right: 1rem;
 
 }
 
 header ul li {
   display: inline;
-  padding: 1rem;
+  padding-left: 2rem;
 }
 
-/* banner */
-.banner img {
-  height: 30rem;
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  padding-bottom: 5rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.row-one {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1rem;
+  /* border: 2px solid blue; */
+  max-width: 800px;
+  width: 100%;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+.row-one img {
+  padding: 0.75rem;
+  width: 3.5rem;
+}
+
+.exams, .fittings, .delivery {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid pink; */
+  margin: 0 3rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  text-align: center;
+}
+
+ /* 2nd row */
+
+.philosophy, .appointment {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid brown; */
+  width: 50%;
+}
+.row-two h4 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+}
+
+.row-two {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 1px solid orange; */
+}
+
+.philosophy p, .appointment p {
+  font-family: Helvetica;
+  font-size: 1rem;
+  max-width: 90%;
+}
+
+.philosophy h4, .appointment h4 {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.appointment {
+  margin-left: 5%;
+}
+
+/* footer */
+
+footer {
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
   width: 100%;
 
 }
 
-/* main */
+footer img {
+  height: 1.5rem;
+}
 
-
-/* footer */
+footer span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
